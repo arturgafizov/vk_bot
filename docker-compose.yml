@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  vk_bot:
+    build:
+      context: bot
+      dockerfile: bot/Dockerfile
+    environment:
+      VK_TOKEN: "15a16ba3fe8a68a2de62f5b35449eee5839947ca1ba3af175d3bcb51d028a056b52409cad95be26785688"
+    env_file:
+      - .db.env
+    volumes:
+      - ./bot:/app
+  db:
+    image: postgres:12.6-alpine
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - .db.env
+
+volumes:
+  postgres_data:

@@ -1,0 +1,9 @@
+vk_api==11.9.7
+
+alembic==1.7.5
+SQLAlchemy==1.4.29
+psycopg2-binary==2.8.5
+databases==0.5.3
+sqlparse==0.4.2
+# SQLAlchemy-ImageAttach==0.9.0
+# Wand==0.6.7

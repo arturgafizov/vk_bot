@@ -1,0 +1,13 @@
+Pip*
+Pipfile*
+__pycache__/
+.idea/
+celerybeat*
+.local/
+*.log
+.ash_history
+.coverage
+.cache
+venv
+modules.txt
+htmlcov

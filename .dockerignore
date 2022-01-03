@@ -1,0 +1,5 @@
+.git
+.cache
+.ash_history
+.coverage
+htmlcov
